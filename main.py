@@ -1,9 +1,6 @@
 # Load EDA Pkgs
 import pandas as pd
 import numpy as np
-# Load Data Visualization Pkgs
-pip install seaborn
-import seaborn as sns
 # Load Text Cleaning Pkgs
 import neattext.functions as nfx
 import sklearn
@@ -22,8 +19,7 @@ df = pd.read_csv(r"C:\Users\S K Pachauri\AppData\Local\Programs\Python\Python38\
 # Value Counts
 df['Emotion'].value_counts()
 
-# Plot
-sns.countplot(x='Emotion',data=df)
+
 
 #sentiment analyis
 from textblob import TextBlob
@@ -41,10 +37,6 @@ def get_sentiment(text):
 df['Sentiment']=df['Text'].apply(get_sentiment)
 df.head()
 df.groupby(['Emotion','Sentiment'])
-#using seaborn
-sns.factorplot
-sns.catplot
-sns.factorplot(x='Emotion',hue='Sentiment',data=df,kind='count',size=6,aspect=1.5)
 # Data Cleaning
 dir(nfx)
 
