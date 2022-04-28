@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 # Load Data Visualization Pkgs
+pip install seaborn
 import seaborn as sns
 # Load Text Cleaning Pkgs
 import neattext.functions as nfx
